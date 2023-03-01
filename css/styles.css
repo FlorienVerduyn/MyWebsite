@@ -1,4 +1,5 @@
-* {
+/* * home page */
+  {
     box-sizing: border-box;
   }
   
@@ -28,7 +29,6 @@
   .navbar {
     overflow: hidden;
     background-color: #333;
-    position: fixed; /* Set the navbar to fixed position */
     width: 100%;
   }
   
@@ -127,9 +127,44 @@
     height: auto;
   }
 
-/* graphic design */
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .achtergrondfoto {
+    background-image: url("/mockup.jpg");
+    text-align: center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    opacity: 0.75;
+  }
+  
+  .display {
+    position: absolute;
+    top: 50%;
+    left: 45%; 
+    transform: translate(50%, 50%);
+  }
+  
+  .text {
+    letter-spacing: 10px;
+    color: black;
+    font-size: 36px;
+   }
+  
+  .achtergrondfoto img {
+    /* height: 200px; */
+    top: 50px;
+    width: 100%;
+    /* max-height: 400px; */
+  }
 
 
+
+/* lay out graphic design */
 
 #mockup {
   width: 50%;
@@ -137,46 +172,62 @@
   
 }
 
+.gallery {
+  display: grid;
+  /* grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw); */
+  row-gap: 15px;
+} 
+
+
+.tekst_uitleg {
+  font-family: Verdana, Helvetica, sans-serif;
+  align
+  font-size: 70px;
+  padding-left: 100px;
+  padding-right: 50px;
+}
 
 
 
 
 
-  /* vanaf hier is het voor de layout van engeneering project */
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 50px;
-  }
-  
-  /* Create four equal columns that sits next to each other */
+/* layout van kolommen van engeneering project, visualisatietechnieken, graphic design*/
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 20px;
+}
+
+.column img {
+  margin-top: 100px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
   .column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 50px;
+    flex: 50%;
+    max-width: 50%;
   }
-  
-  .column img {
-    margin-top: 100px;
-    vertical-align: middle;
-    width: 100%;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
   }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
+}
 
 
 
@@ -267,88 +318,7 @@
 
 
 
-/* graphic design */
 
-.gallery {
-  display: grid;
-  /* grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 5vw); */
-  row-gap: 15px;
-} 
-
-/* .gallery__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.gallery__item--1 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
-
-.gallery__item--2 {
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
-
-.gallery__item--3 {
-  grid-column-start: 5;
-  grid-column-end: 9;
-  grid-row-start: 1;
-  grid-row-end: 5;
-}
-
-.gallery__item--4 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 5;
-}
-
-.gallery__item--5 {
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 3;
-  grid-row-end: 5;
-} */
-
-/* #grid { 
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 2vw;
-  }
-#grid > div {
-  font-size: 5vw;
-  padding: .5em;
-  background: gold;
-  text-align: center;
-}
-</style>
-<div id="grid">
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>
-  <div>4</div>
-  <div>5</div>
-  <div>6</div>
-  <div>7</div>
-  <div>8</div>
-  <div>9</div>
-</div> */
-
-.tekst_uitleg {
-  font-family: Verdana, Helvetica, sans-serif;
-  align
-  font-size: 70px;
-  padding-left: 100px;
-  padding-right: 50px;
-}
 
 
 /* visualisation techniques */
@@ -366,37 +336,4 @@ div.gallery:hover {
 div.gallery img {
   width: 100%;
   height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-
-.achtergrondfoto {
-  background-image: url("/mockup.jpg");
-  text-align: center;
-  background-attachment: fixed;
-  background-size: cover;
-  position: relative;
-  opacity: 0.75;
-}
-
-.display {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.text {
-  letter-spacing: 10px;
-  color: black;
-  font-size: 36px;
-}
-
-.achtergrondfoto img {
-  /* height: 200px; */
-  width: 100%;
-  max-height: 400px;
 }
