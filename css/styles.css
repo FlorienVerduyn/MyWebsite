@@ -372,3 +372,31 @@ div.desc {
   padding: 15px;
   text-align: center;
 }
+
+.achtergrondfoto {
+  background-image: url("/mockup.jpg");
+  text-align: center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  opacity: 0.75;
+}
+
+.display {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text {
+  letter-spacing: 10px;
+  color: black;
+  font-size: 36px;
+}
+
+.achtergrondfoto img {
+  /* height: 200px; */
+  width: 100%;
+  max-height: 400px;
+}
