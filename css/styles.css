@@ -58,6 +58,9 @@ body {
 }
 
 
+
+
+
 /* Column container */
 /* .row {  
   display: -ms-flexbox; 
@@ -179,7 +182,7 @@ div.desc {
 
 .tekst_uitleg {
   font-family: Verdana, Helvetica, sans-serif;
-  align 
+  align
   font-size: 80px;
   padding-left: 50px;
   padding-right: 50px;
@@ -324,7 +327,6 @@ div.desc {
 
 
 
-
 /* visualisation techniques */
 div.gallery {
   margin: 50px;
@@ -384,6 +386,20 @@ div.sticky {
 
 
 
+
+/* index pagina */
+.tweekolommen {
+  float: left;
+  width: 50%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.email {
+  color: black;
+}
 
 
 
