@@ -1,0 +1,43 @@
+/* https://github.com/JelleSaldien/MyWebsite/blob/main/css/styles.css */
+
+
+
+
+  /* P5JS assignment */
+
+.chapter {
+  padding-top: 30px;
+  margin-top: -30px;
+  /* adjust this value to match the height of your navigation bar to make sure it does not overlap your content */
+}
+
+.chapter #Coding4designers {
+  align-items: center;
+}
+
+.navbarP5JS {
+  overflow: hidden;
+  background-color: #494949;
+  width: 100%;
+}
+
+.navbarP5JS a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.navbarP5JS a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Change color on active */
+.navbarP5JS a:active {
+  background-color: rgb(92, 138, 245);
+  color: black;
+}

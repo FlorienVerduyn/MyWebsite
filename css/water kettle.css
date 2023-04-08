@@ -2,17 +2,17 @@
 
 .img-comp-container {
   position: relative;
-  height: 200px; /*should be the same height as the images*/
+  height: 100%; /*should be the same height as the images*/
   
 }
 
 .img-comp-img {
   position: absolute;
   width: auto;
-  height: auto;
+  height: 100%;
   overflow: hidden;
-  padding-left: 40px;
-  padding-bottom: 40px;
+  /* padding-left: 40px;
+  padding-bottom: 40px; */
 }
 
 .img-comp-img img {

@@ -11,7 +11,8 @@ body {
 
 /* Header/logo Title */
 .header {
-  padding: 80px;
+  padding-top: 1200px;
+  margin-top: -40px;
   text-align: center; 
   background: #257a69;
   color: white;
@@ -27,6 +28,7 @@ body {
   overflow: hidden;
   background-color: #333;
   width: 100%;
+  position: fixed;
 }
 
 /* Style the navigation bar links */
@@ -184,8 +186,7 @@ div.desc {
   font-family: Verdana, Helvetica, sans-serif;
   align
   font-size: 80px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 20px;
 }
 
 .link {
@@ -214,7 +215,7 @@ div.desc {
 .column {
   flex: 25%;
   max-width: 25%;
-  padding: 20px;
+  padding: 10px;
 }
 
 .column img {
@@ -237,6 +238,10 @@ div.desc {
     flex: 100%;
     max-width: 100%;
   }
+}
+
+.ronde_afbeeldingen img{
+  border-radius: 10px;
 }
 
 
@@ -328,11 +333,21 @@ div.desc {
 
 
 /* visualisation techniques */
-div.gallery {
-  margin: 50px;
+/* div.gallery {
+  margin-right: 10px;
   border: 1px solid #ccc;
   float: left;
-  width: 400px;
+  width: 100%;
+} */
+
+div.gallery{
+  padding:0 8px;
+  padding-top: 8px;
+  float:left;
+  width:100%;
+  width:49.99999%;
+  padding-top: 8px;
+  border: 1px solid #ccc;
 }
 
 div.gallery:hover {
@@ -344,6 +359,30 @@ div.gallery img {
   height: auto;
   
 }
+
+.kolom3maker {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.kolom3 {
+  padding: 20px;
+}
+
+.kolom2maker {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 50px;
+}
+
+.kolom2 {
+  padding: 20px;
+}
+
+
+
+
 
 
 
@@ -404,6 +443,66 @@ div.sticky {
 footer{
   clear: both;
 }
+
+
+
+.chapter {
+  padding-top: 30px;
+  margin-top: -30px;
+  /* adjust this value to match the height of your navigation bar to make sure it does not overlap your content */
+}
+
+.chapter #Coding4designers {
+  align-items: center;
+}
+
+.navbarP5JS {
+  overflow: hidden;
+  background-color: #494949;
+  width: 100%;
+}
+
+.navbarP5JS a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.navbarP5JS a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Change color on active */
+.navbarP5JS a:active {
+  background-color: rgb(92, 138, 245);
+  color: black;
+}
+
+
+.hoofdindeling {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hoofdindeling-links {
+  width: 33%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+}
+
+.hoofdindeling-rechts {
+  flex-grow: 1;
+  margin-left: 33%; /* breedte van de linker kolom */
+}
+
+
 
 
 
