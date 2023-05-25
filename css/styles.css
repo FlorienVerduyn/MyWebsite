@@ -9,26 +9,12 @@ body {
   margin: 0;
 }
 
-/* Header/logo Title */
-.header {
-  padding-top: 1200px;
-  margin-top: -40px;
-  text-align: center; 
-  background: #257a69;
-  color: white;
-}
-
-/* Increase the font size of the heading */
-.header h1 {
-  font-size: 40px;
-}
-
 /* Style the top navigation bar */
 .navbar {
-  overflow: hidden;
-  background-color: #333;
-  width: 100%;
+  background-color: #333333;
+  width: 67%;
   position: fixed;
+  margin-left: -1px;
 }
 
 /* Style the navigation bar links */
@@ -39,7 +25,6 @@ body {
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
-
 }
 
 /* Right-aligned link */
@@ -51,48 +36,6 @@ body {
 .navbar a:hover {
   background-color: #ddd;
   color: black;
-}
-
-/* Change color on active */
-.navbar a:active {
-  background-color: rgb(92, 138, 245);
-  color: black;
-}
-
-
-
-
-
-/* Column container */
-/* .row {  
-  display: -ms-flexbox; 
-  display: flex;
-  -ms-flex-wrap: wrap; 
-  flex-wrap: wrap;
-} */
-
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-  -ms-flex: 30%; /* IE10 */
-  flex: 30%;
-  background-color: #f1f1f1;
-  padding: 20px;
-}
-
-/* Main column */
-.main {   
-  -ms-flex: 70%; /* IE10 */
-  flex: 70%;
-  background-color: white;
-  padding: 20px;
-}
-
-/* Fake image, just for this example */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
 }
 
 /* Footer */
@@ -117,73 +60,35 @@ body {
   }
 }
 
-
-.collage {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-}
-
-.collage img {
-  width: 100%;
-  height: auto;
-}
-
-
 div.desc {
   padding: 15px;
   text-align: center;
 }
 
-
-
-.achtergrondfoto {
-  background-image: url("/mockup.jpg");
-  text-align: center;
-  background-attachment: fixed;
-  background-size: cover;
-  position: relative;
-  opacity: 0.75;
+/* hoofdindeling van website */
+.hoofdindeling {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.display {
-  position: absolute;
-  top: 50%;
-  left: 45%; 
-  transform: translate(50%, 50%);
+.hoofdindeling-links {
+  width: 33%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
 }
 
-.text {
-  letter-spacing: 10px;
-  color: black;
-  font-size: 36px;
-  }
-
-.achtergrondfoto img {
-  top: 50px;
-  width: 100%;
+.hoofdindeling-rechts {
+  flex-grow: 1;
+  margin-left: 33%; /* breedte van de linker kolom */
 }
-
-
 
 /* lay out graphic design */
 
-#mockup {
-  width: 50%;
-  padding-left: 50px;
-  
-}
-
-.gallery {
-  display: grid;
-  /* grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 5vw); */
-  row-gap: 15 px;
-} 
-
-
 .tekst_uitleg {
   font-family: Verdana, Helvetica, sans-serif;
+  color: gray;
   align
   font-size: 80px;
   padding: 20px;
@@ -200,9 +105,6 @@ div.desc {
 }
 
 
-
-
-
 /* layout van kolommen van engeneering project, visualisatietechnieken, graphic design*/
 
 .row {
@@ -211,7 +113,6 @@ div.desc {
   padding: 20px;
 }
 
-/* Create four equal columns that sits next to each other */
 .column {
   flex: 25%;
   max-width: 25%;
@@ -240,106 +141,7 @@ div.desc {
   }
 }
 
-.ronde_afbeeldingen img{
-  border-radius: 10px;
-}
-
-
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-
- /* Next & previous buttons */ 
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: black;
-  font-size: 30px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 4px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-
-
-
-
 /* visualisation techniques */
-/* div.gallery {
-  margin-right: 10px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 100%;
-} */
-
 div.gallery{
   padding:0 8px;
   padding-top: 8px;
@@ -380,76 +182,14 @@ div.gallery img {
   padding: 20px;
 }
 
-
-
-
-
-
-
-
-
-/* navigatiebar */
-/* Style the search box */
-#mySearch {
-  width: 100%;
-  font-size: 18px;
-  padding: 11px;
-  border: 1px solid #ddd;
-}
-
-/* Style the navigation menu */
-#myMenu {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-/* Style the navigation links */
-#myMenu li a {
-  padding: 12px;
-  text-decoration: none;
-  color: black;
-  display: block
-}
-
-#myMenu li a:hover {
-  background-color: #eee;
-}
-
-
-div.sticky {
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
-}
-
-
-
-
-/* index pagina */
-.tweekolommen {
-  float: left;
-  width: 50%;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
-
 .email {
   color: black;
 }
 
-footer{
-  clear: both;
-}
-
-
-
+/* P5JS robot assignment */
 .chapter {
   padding-top: 30px;
   margin-top: -30px;
-  /* adjust this value to match the height of your navigation bar to make sure it does not overlap your content */
 }
 
 .chapter #Coding4designers {
@@ -483,42 +223,32 @@ footer{
   color: black;
 }
 
-
-.hoofdindeling {
-  display: flex;
-  flex-wrap: wrap;
+/* waterkettle */
+.img-comp-container {
+  position: relative;
+  height: 100%; /*should be the same height as the images*/
+  
 }
 
-.hoofdindeling-links {
-  width: 33%;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  overflow-y: auto;
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: 100%;
+  overflow: hidden;
 }
 
-.hoofdindeling-rechts {
-  flex-grow: 1;
-  margin-left: 33%; /* breedte van de linker kolom */
+.img-comp-img img {
+  display: block;
+  vertical-align: bottom;
+  }
+
+.img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  width: 40px;
+  height: 40px;
+  background-color: whitesmoke;
+  opacity: 0.7;
+  border-radius: 50%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

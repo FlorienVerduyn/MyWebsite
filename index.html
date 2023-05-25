@@ -5,19 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/water kettle.css">
-    <!-- <link rel="stylesheet" href="css/P5JS assignment.css"> -->
 
     <script src="water kettle.js"></script>
 </head>
 
 <body>
     <div class="hoofdindeling">
+
+        <!-- linker kolom -->
         <div class="hoofdindeling-links">
                 <div class="img-comp-container">
                 <div class="img-comp-img">
@@ -31,7 +29,22 @@
                 initComparisons();
             </script>  
         </div>
+
+
+        <!-- rechter kolom -->
         <div class="hoofdindeling-rechts">
+
+            <!-- navigatiebalk -->
+            <nav class="navbar">
+                <ul>                  
+                    <a href="P5JS">P5JS</a>
+                    <a href="#engineering project">Engineering project</a>
+                    <a href="#vizualisation techniques">Vizualisation techiniques</a>
+                    <a href="#graphic design">Graphic design</a>
+                    <a href="#About">About</a>
+                </ul>
+            </nav>
+
             <!-- Header -->
             <header class="w3-container w3-center" style="padding: 230px 16px" id="home">
                 <h1 class="w3-jumbo"><b>Florien Verduyn</b></h1>
@@ -41,7 +54,7 @@
 
 
             <!-- About Section -->
-            <div class="w3-content w3-justify w3-text-grey w3-padding-32">
+            <div id="About" class="w3-content w3-justify w3-text-grey w3-padding-32">
                 <h2>About</h2>
                 <hr class="w3-opacity">
                 <div class="kolom2maker">
@@ -63,7 +76,7 @@
             
         
             <!-- Graphic Design Section -->
-            <div class="w3-padding-32 w3-content" id="portfolio">
+            <div id="graphic design" class="w3-padding-32 w3-content" id="portfolio">
                 <h2 class="w3-text-grey">Graphic Design</h2>
                 <hr class="w3-opacity">
 
@@ -88,53 +101,61 @@
                 </div>
 
                 <!-- visualisation techniques -->
-                <div class="w3-padding-32 w3-content" id="portfolio" style="clear: both;">
-                    <h2 class="tekst">Visualization techniques</h2>
+                <div id="vizualisation techniques" class="w3-padding-32 w3-content" id="portfolio" style="clear: both;">
+                    <h2 class="w3-text-grey">Visualization techniques</h2>
                     <hr class="w3-opacity">
+                    <div class="tekst_uitleg">
+                        <p>
+                        During visualization techniques, we learned about photography and computer graphics. During the photography 
+                        course, we became acquainted with the fundamentals of composition, lighting, and perspective. Translating 
+                        these techniques to digital rendering, I positioned light sources and manipulated textures to achieve to 
+                        simulate realistic objects. 
+                        </p>
+                    </div>   
 
 
-                <div class="kolom3maker">
-                    <div class="kolom3">
-                    <a href="photography.html">
-                        <img src="Verduyn_florien_03_2_6.jpg" alt="Photography" width="100%">
-                    </a>
-                    <div class="desc tekst_uitleg">Photography</div>
-                    </div>
-                    <div class="kolom3">
-                    <a href="cornell box.html">
-                        <img src="cornell box Florien Verduyn (2).jpg" alt="Cornell box" width="100%">
-                    </a>
-                    <div class="desc tekst_uitleg">Cornell box</div>
-                    </div>
-                    <div class="kolom3">
-                    <a href="water kettle VT.html">
-                        <img src="Verduyn_Florien_studio.png" alt="Water kettle" width="100%">
-                    </a>
-                    <div class="desc tekst_uitleg">Water kettle</div>
-                    </div>
-                </div>  
+                    <div class="kolom3maker">
+                        <div class="kolom3">
+                        <a href="photography.html">
+                            <img src="Verduyn_florien_03_2_6.jpg" alt="Photography" width="100%">
+                        </a>
+                        <div class="desc tekst_uitleg">Photography</div>
+                        </div>
+                        <div class="kolom3">
+                        <a href="cornell box.html">
+                            <img src="cornell box Florien Verduyn (2).jpg" alt="Cornell box" width="100%">
+                        </a>
+                        <div class="desc tekst_uitleg">Cornell box</div>
+                        </div>
+                        <div class="kolom3">
+                        <a href="water kettle VT.html">
+                            <img src="Verduyn_Florien_studio.png" alt="Water kettle" width="100%">
+                        </a>
+                        <div class="desc tekst_uitleg">Water kettle</div>
+                        </div>
+                    </div>  
 
 
 
                 <!-- engineering project -->
 
-                <div class="w3-padding-32 w3-content" id="portfolio" style="clear:both">
+                <div id="engineering project" class="w3-padding-32 w3-content" id="portfolio" style="clear:both">
                 <h2 class="w3-text-grey">Engineering project</h2>
                 <hr class="w3-opacity">
 
                 <div class="tekst_uitleg">
-                <p>
-                    For this engineering project, we needed to develop a system that could separate plastic and aluminum. 
-                    Therefore we used eddy current separation. This works by inducing an electrical current in a conductive 
-                    material, such as aluminum. The current creates a magnetic field around the material that creates a force 
-                    that repels the material away from the source of the magnetic field.
-                </p> 
-                <p>
-                    This project required not only a lot of research, but also extensive testing and optimization to achieve a 
-                    system that is as efficient and effective as possible. I also learned a lot about the importance of finding 
-                    sustainable solutions for things that already exist. 
-                </p>
-                </div>
+                    <p>
+                        For this engineering project, we needed to develop a system that could separate plastic and aluminum. 
+                        Therefore we used eddy current separation. This works by inducing an electrical current in a conductive 
+                        material, such as aluminum. The current creates a magnetic field around the material that creates a force 
+                        that repels the material away from the source of the magnetic field.
+                    </p> 
+                    <p>
+                        This project required not only a lot of research, but also extensive testing and optimization to achieve a 
+                        system that is as efficient and effective as possible. I also learned a lot about the importance of finding 
+                        sustainable solutions for things that already exist. 
+                    </p>
+                    </div>
                 
 
                 <div class="row">
@@ -165,17 +186,43 @@
                 </div>
             </div>
 
+
+            <!-- P5JS Robot Assignments -->
             <div class="w3-padding-32 w3-content" id="portfolio">
                 <h2 class="w3-text-grey">The P5JS Robot Assignments</h2>
                 <hr class="w3-opacity">
 
+                <div class="tekst_uitleg">
+                    <p>
+                        The exercises of the course on Emerging Technologies were designed to give us a taste of Processing
+                        and to explore new technologies our my design practice. These hands-on experiences let us explore 
+                        new technologies in design practice.
+                    </p>
+                    <p>
+                        Initially, several iterations of a robot with interactive features were created, paving the way for 
+                        the ultimate development of an interactive game. Building upon the knowledge gained from the iterative 
+                        process, it resulted in a game with a created world where a robot now takes on an enemy. 
+                    </p>
+                </div>
+
                 <section class="chapter" id="P5JS">
                     <div class="navbarP5JS" id="myP5JSbar">
                         <a href="javascript:void(0);" onclick="myP5JSFunction('LdhR5vOkk')">Exercise 1</a>
-                        <a href="javascript:void(0);" onclick="myP5JSFunction('eSDHs4xUf')">Exercise 2</a>
+                        <a href="javascript:void(0);" onclick="myP5JSFunction('NWJgLohRV')">Exercise 2</a>
+                        <a href="javascript:void(0);" onclick="myP5JSFunction('wZIYlsbWy')">Exercise 3</a>
+                        <a href="javascript:void(0);" onclick="myP5JSFunction('oONRgWMEh')">Exercise 4</a>
+                        <a href="javascript:void(0);" onclick="myP5JSFunction('Mw-vqP4RC')">Exercise 5</a>
+                        <a href="javascript:void(0);" onclick="myP5JSFunction('rqb5mwlmv')">Exercise 6</a>
+                        <a href="javascript:void(0);" onclick="myP5JSFunction('1JipIPnhP')">Exercise 7</a>
+                        <a href="javascript:void(0);" onclick="myP5JSFunction('y7dXC4oGP')">Game</a>
                     </div>
-                    <iframe id="P5JSframe" src="https://editor.p5js.org/FlorienVerduyn/sketches/LdhR5vOkk" width="100%"
+                    <iframe id="P5JSframe" src="https://editor.p5js.org/FlorienVerduyn/full/LdhR5vOkk" width="100%"
                         height="600"></iframe>
+                    <script>
+                        function myP5JSFunction(exercise){
+                            document.getElementById("P5JSframe").src = "https://editor.p5js.org/FlorienVerduyn/full/" + exercise;
+                        }
+                    </script>
                 </section>
             </div>
 
